@@ -1,0 +1,172 @@
+/* Palette Globale & Impostazioni Base */
+:root {
+  --main-bg: #0a0a0a;
+  --card-bg: #1a1a1a;
+  --accent-red: #d90429;
+  --accent-red-hover: #ef233c;
+  --text-main: #edf2f4;
+  --border-color: #2b2b2b;
+}
+
+html, body {
+  background-color: var(--main-bg);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Stile per scrollbar personalizzata (opzionale per un look più rifinito) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--main-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-red); 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-red-hover); 
+}
+
+/* Colori specifici per Bootstrap override */
+.bg-black { background-color: #000000 !important; }
+.bg-dark { background-color: var(--card-bg) !important; }
+.text-danger { color: var(--accent-red) !important; }
+.border-danger { border-color: var(--accent-red) !important; }
+.border-secondary { border-color: var(--border-color) !important; }
+
+/* Bottoni personalizzati */
+.btn-outline-danger {
+  color: var(--accent-red);
+  border-color: var(--accent-red);
+}
+.btn-outline-danger:hover {
+  background-color: var(--accent-red);
+  color: #fff;
+}
+.btn-danger {
+  background-color: var(--accent-red);
+  border-color: var(--accent-red);
+}
+.btn-danger:hover {
+  background-color: var(--accent-red-hover);
+  border-color: var(--accent-red-hover);
+}
+
+/* Form inputs & Select */
+.form-control:focus, .form-select:focus {
+  background-color: #000;
+  color: #fff;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 0.25rem rgba(217, 4, 41, 0.25);
+}
+
+/* Tabella Global Quote */
+.table {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.table thead {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.table thead th {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--accent-red) !important;
+  font-weight: bold !important;
+}
+
+.table tbody {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.table tbody tr {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.table tbody td {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--text-main) !important;
+}
+
+.table tbody tr:hover {
+  background-color: transparent !important;
+}
+
+.table-dark {
+  background-color: transparent !important;
+}
+
+.table-danger th {
+  background-color: transparent !important;
+  color: var(--accent-red) !important;
+  border-color: transparent !important;
+  font-weight: bold !important;
+}
+
+.table-striped tbody tr {
+  background-color: transparent !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: transparent !important;
+}
+
+.table-bordered {
+  border: none !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: none !important;
+}
+
+/* Risultati ricerca (ul) */
+#searchResults {
+  position: absolute;
+  z-index: 1000;
+  width: calc(100% - 2rem);
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+#searchResults .list-group-item {
+  background-color: transparent;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+#searchResults .list-group-item:hover {
+  background-color: var(--accent-red);
+  color: white;
+}
+
+/* Mappa */
+#mapContainer {
+  border-bottom-left-radius: var(--bs-border-radius);
+  border-bottom-right-radius: var(--bs-border-radius);
+}
+
+/* Testi Overview */
+.text-justify {
+  text-align: justify;
+}
+
+/* Selection Message */
+#selectionMessage {
+  min-height: 80vh;
+}
+
+#selectionMessage h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  max-width: 90%;
+}
