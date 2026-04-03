@@ -1,1 +1,3 @@
 # P_AlphaVantage
+Quando il sito viene aperto, si può scegliere se scegliere un'azienda con la ricerca incrementale oppure con la listbox. Una volta scelta l'azienda, vengono visualizzati i dati.
+Tutti i dati sono stati presi con chiamate GET verso il localhost, mentre quella di aggiornamento dei dati è diretta verso AlphaVantage. Nell'overview è presente un link che se viene cliccato reindirizza l'utente verso il sito web dell'azienda. Inoltre è presente il grafico, dal quale si può selezionare il periodo di tempo interessato e il tipo di grafico. C'è anche un button che permette di salvare l'immagine png del grafico nei download.
